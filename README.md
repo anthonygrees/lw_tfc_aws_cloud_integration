@@ -1,4 +1,7 @@
 # Lacework Terraform Cloud AWS Integration Example
+[![IaC](https://app.soluble.cloud/api/v1/public/badges/cddb5b8c-0699-4311-be93-2c28b7f36ba2.svg?orgId=359062078604)](https://app.soluble.cloud/repos/details/github.com/anthonygrees/lw_tfc_aws_cloud_integration?orgId=359062078604)
+[![HIPAA](https://app.soluble.cloud/api/v1/public/badges/a72347b7-e0b1-4eae-9df8-c762939b943a.svg?orgId=359062078604)](https://app.soluble.cloud/repos/details/github.com/anthonygrees/lw_tfc_aws_cloud_integration?orgId=359062078604)
+
 This Terraform can be used on Terraform Cloud (TFC) to integrate your AWS Cloud account with Lacework.  
   
 ![TFC](/images/overview.png)
