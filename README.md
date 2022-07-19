@@ -28,3 +28,14 @@ Add the repo to Terraform Cloud and add the following variables.
 In TFC, start a new run to complete the integration between your AWS Cloud Account and Lacework.  
   
 ![TFC Start](/images/start.png)
+  
+### 5. Completed Job
+Once the Terraform Run is complete, it will look like this in TFC.
+  
+![TFC Complete](/images/complete.png)
+  
+Now check the Lacework Integration.  
+  
+In the Lacework UI, go to `Settings` -> `Cloud Accounts` and you will see the 2 new integrations.  They should go from yellow `Pending` to green `Success` after about 15 minutes.  
+  
+![LW Complete](/images/lwcomplete.png)
