@@ -48,6 +48,7 @@ module "main_cloudtrail" {
   ## If you do not have an existing SNS topic configured on the existing CloudTrail, 
   ## the Terraform module automatically creates one, but you must "manually" attach the SNS topic to the existing CloudTrail
   ## after the terraform has run.
+  sns_topic_encryption_enabled = false
   use_existing_sns_topic = false
   ##sns_topic_arn = AWS_SNS_ARN
   ##
