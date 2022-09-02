@@ -40,4 +40,7 @@ module "main_cloudtrail" {
   ## after the terraform has run.
   use_existing_sns_topic = false
   ##sns_topic_arn = AWS_SNS_ARN
+  ##
+  ## If you need to configure multiple AWS account for Inventory only use this terraform
+  ## https://docs.lacework.com/onboarding/aws-cloudtrail-integration-with-terraform#scenario-7---configure-multiple-aws-accounts
 }
