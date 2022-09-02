@@ -1,3 +1,6 @@
+##
+## https://registry.terraform.io/modules/lacework/cloudtrail/aws/latest/examples/existing-cloudtrail-end-to-end-encryption
+##
 terraform {
   required_providers {
     lacework = {
