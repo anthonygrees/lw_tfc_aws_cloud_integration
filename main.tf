@@ -40,8 +40,10 @@ module "main_cloudtrail" {
   ## Remove if you do not have an existing CloudTrail and IAM to integrate with Lacework.
   use_existing_cloudtrail = true
   use_existing_iam_role   = true
+  ##
+  ## IMPORTANT !!
   ## If you do not have an existing SNS topic configured on the existing CloudTrail, 
-  ## the Terraform module automatically creates one, but you must manually attach the SNS topic to the existing CloudTrail
+  ## the Terraform module automatically creates one, but you must "manually" attach the SNS topic to the existing CloudTrail
   ## after the terraform has run.
   use_existing_sns_topic = false
   ##sns_topic_arn = AWS_SNS_ARN
