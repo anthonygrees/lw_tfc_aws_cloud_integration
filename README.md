@@ -19,6 +19,13 @@ To integrate AWS with Lacework, Lacework Terraform modules provision the followi
   
 Full docs can be found here https://docs.lacework.com/onboarding/aws-cloudtrail-integration-with-terraform
   
+### Requirements
+`AWS Account Admin` - The account used to run Terraform must have administrative privileges on every AWS account you intend to integrate with Lacework.   
+`AWS CLI` - The Terraform Provider for AWS leverages the configuration from the AWS CLI and it is recommended the AWS CLI is installed and configured with API Keys for the account being integrated.  
+`Lacework Administrator` - You must have a Lacework account with administrator privileges.  
+`Lacework CLI` - Lacework leverages the configuration from the Lacework CLI. It is recommended the Lacework CLI is installed and configured.  
+`Terraform` - ~> 0.14, ~> 0.15, ~> 1.0, ~> 1.1.  
+  
 ### 1. Lacework API Key
 Login to Lacework and go to `Settings` -> `API Keys` -> `+ Add New`    
   
