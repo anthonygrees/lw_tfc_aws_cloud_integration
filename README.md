@@ -12,6 +12,7 @@ To integrate AWS with Lacework, Lacework Terraform modules provision the followi
  - `SecurityAudit` - AWS Managed Policy to provide read-only access to cloud resource configurations.  
  - `Lacework Custom Audit Policy` - A custom policy that extends SecurityAudit to enable read-only access to additional configuration resources.  
  - `Lacework Custom IAM Policy` - A custom policy that provides Lacework read-only access to ingest CloudTrail logs.  
+  
 `CloudTrail` - Lacework can create a new trail or use an existing CloudTrail.  
 `S3 Bucket` - An S3 bucket is required for all CloudTrail integrations. Lacework can use an existing bucket or create a new bucket in the designated account.  
 `SNS Topic` - An SNS topic is required for all CloudTrail integrations. Terraform can use an existing SNS topic or create one if an SNS topic has not be added to an existing CloudTrail.  
