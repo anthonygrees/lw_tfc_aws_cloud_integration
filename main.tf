@@ -33,6 +33,8 @@ module "main_cloudtrail" {
   ##
   ## As of version v1.0.0 of terraform-aws-cloudtrail module defaults to KMS-encrypted CloudTrail buckets and creates a new KMS key. 
   ## Optionally users can supply the ARN of their KMS key.
+  ## If encryption is being used
+  ## KMS key ARN is usually in the form: arn:aws:kms:[aws_region]:[aws_account]:key/[value]
   ## bucket_sse_key_arn       = "arn:aws:kms:example-region-1:123456789098:key/111aa2bb-333c-4d44-5555-a111bb2c33dd"
   ##
   ## Remove consolidated_trail if not required.
@@ -48,6 +50,7 @@ module "main_cloudtrail" {
   ## If you do not have an existing SNS topic configured on the existing CloudTrail, 
   ## the Terraform module automatically creates one, but you must "manually" attach the SNS topic to the existing CloudTrail
   ## after the terraform has run.
+  ## https://docs.lacework.com/onboarding/aws-cloudtrail-integration-with-terraform#about-sns-topics
   sns_topic_encryption_enabled = false
   use_existing_sns_topic = false
   ##sns_topic_arn = AWS_SNS_ARN
