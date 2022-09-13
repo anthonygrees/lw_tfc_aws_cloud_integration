@@ -35,7 +35,7 @@ module "main_cloudtrail" {
   ## Optionally users can supply the ARN of their KMS key.  Access to this key will be granted to the Lacework IAM cross-account role.
   ## If encryption is being used
   ## KMS key ARN is usually in the form: arn:aws:kms:[aws_region]:[aws_account]:key/[value]
-  ## bucket_sse_key_arn       = "arn:aws:kms:example-region-1:123456789098:key/111aa2bb-333c-4d44-5555-a111bb2c33dd"
+  bucket_sse_key_arn       = "arn:aws:kms:example-region-1:123456789098:key/111aa2bb-333c-4d44-5555-a111bb2c33dd"
   ##
   ## Remove consolidated_trail if not required.
   consolidated_trail      = true
