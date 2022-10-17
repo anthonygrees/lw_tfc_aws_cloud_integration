@@ -46,6 +46,7 @@ module "main_cloudtrail" {
   use_existing_cloudtrail = true
   use_existing_iam_role   = true
   ##
+  sqs_encryption_enabled = false
   ## IMPORTANT !!
   ## If you do not have an existing SNS topic configured on the existing CloudTrail, 
   ## the Terraform module automatically creates one, but you must "manually" attach the SNS topic to the existing CloudTrail
