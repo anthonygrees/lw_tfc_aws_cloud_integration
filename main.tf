@@ -39,6 +39,10 @@ module "main_cloudtrail" {
   ##
   ## Remove consolidated_trail if not required.
   consolidated_trail      = true
+  ## Whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. 
+  ## Can only be created in the organization master account
+  is_organization_trail   = false
+  ##
   iam_role_arn            = module.aws_config.iam_role_arn
   iam_role_external_id    = module.aws_config.external_id
   iam_role_name           = module.aws_config.iam_role_name
